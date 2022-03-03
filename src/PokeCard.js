@@ -5,6 +5,7 @@ import {withPokeApi} from "./withPokeApi";
 class PokeCard extends React.Component {
 
     componentDidMount(){   
+        console.log(this.props.text);
         this.props.getPokemon();       
     }
 

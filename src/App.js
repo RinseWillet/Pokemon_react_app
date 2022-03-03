@@ -8,7 +8,7 @@ const App = () => {
 
     return (
         <ul>
-            <li><PokeCard></PokeCard></li>
+            <li><PokeCard text="Rinse"></PokeCard></li>
             <li><PokeCard></PokeCard></li>
             <li><PokeCard></PokeCard></li>
             <li><PokeCard></PokeCard></li>
