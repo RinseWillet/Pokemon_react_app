@@ -14,6 +14,33 @@ const App = () => {
             <li><PokeCard></PokeCard></li>
             <li><PokeCard></PokeCard></li>
             <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
+            <li><PokeCard></PokeCard></li>
         </ul>
         );
 }
