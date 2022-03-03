@@ -1,6 +1,8 @@
 import "./App.css";
 import PokeCard from "./PokeCard";
 import PokeCircle from "./PokeCircle";
+import PokeSquare from "./PokeSquare";
+
 
 const App = () => {
 
@@ -17,7 +19,7 @@ const App = () => {
             <li><PokeCard></PokeCard></li>
             <li><PokeCard></PokeCard></li>
             <li><PokeCircle></PokeCircle></li>          
-            
+            <li><PokeSquare></PokeSquare></li>   
         </ul>
         );
 }

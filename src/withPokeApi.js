@@ -20,8 +20,8 @@ export const withPokeApi = (WrappedComponent) => {
 
         render() {
             return <WrappedComponent getPokemon={this.getPokemon}
-            pokemon_name={this.state.pokemon_name}
-            pokemon_source={this.state.pokemon_source} ></WrappedComponent>
+                pokemon_name={this.state.pokemon_name}
+                pokemon_source={this.state.pokemon_source} ></WrappedComponent>
         }
     }
 

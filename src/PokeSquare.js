@@ -1,8 +1,8 @@
 import React from "react";
-import "./PokeCircle.css";
+import "./PokeSquare.css";
 import { withPokeApi } from "./withPokeApi";
 
-class PokeCircle extends React.Component {
+class PokeSquare extends React.Component {
 
     componentDidMount() {
         this.props.getPokemon();  
@@ -10,11 +10,11 @@ class PokeCircle extends React.Component {
 
     render() {
         return (
-            <article className="pokeCircle">
+            <article className="pokeSquare">
                 {this.props.pokemon_name}
             </article>
         );
     }
 }
 
-export default withPokeApi(PokeCircle);
+export default withPokeApi(PokeSquare);

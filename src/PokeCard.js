@@ -4,11 +4,6 @@ import {withPokeApi} from "./withPokeApi";
 
 class PokeCard extends React.Component {
 
-    constructor(props){
-        super(props);
-        this.state = {pokemon_name: "", pokemon_source: ""}
-    }
-
     componentDidMount(){   
         this.props.getPokemon();       
     }
