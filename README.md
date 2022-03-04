@@ -1,3 +1,6 @@
+This is a simple app that calls the PokéAPI (https://pokeapi.co/) and generates a set of flex-box cards with information on randomly chosen pokémons. This was made as an exercise for a ReactJS course with the purpose of learning high order components and hooks.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
