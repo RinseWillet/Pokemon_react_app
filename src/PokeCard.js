@@ -1,22 +1,17 @@
 import React from "react";
 import "./PokeCard.css";
-import {withPokeApi} from "./withPokeApi";
+import usePokeApi from "./usePokeApi";
 
-class PokeCard extends React.Component {
+const PokeCard = (props) => {
 
-    componentDidMount(){   
-        console.log(this.props.text);
-        this.props.getPokemon();       
-    }
+    const pokemon = usePokeApi();
 
-    render(){        
-        return (
-            <article>
-                <header>{this.props.pokemon_name}</header>
-                <figure><img src={this.props.pokemon_source} /></figure>
-            </article>
-        )
-    }    
+    return (
+        <article>
+            <header>{pokemon.pokemon_name || "unknown"}</header>
+            <figure><img src={pokemon.pokemon_sprite || "unknown"} /></figure>
+        </article> 
+    )
 }
 
-export default withPokeApi(PokeCard);
+export default PokeCard;

@@ -1,20 +1,16 @@
 import React from "react";
 import "./PokeCircle.css";
-import { withPokeApi } from "./withPokeApi";
+import usePokeApi from "./usePokeApi";
 
-class PokeCircle extends React.Component {
+const PokeCircle = (props) => {
 
-    componentDidMount() {
-        this.props.getPokemon();  
-    } 
+    const pokemon = usePokeApi();
 
-    render() {
-        return (
-            <article className="pokeCircle">
-                {this.props.pokemon_name}
-            </article>
-        );
-    }
+    return (
+        <article className="pokeCircle">
+            {pokemon.pokemon_name || "unknown"}
+        </article>
+    );
 }
 
-export default withPokeApi(PokeCircle);
+export default PokeCircle;

@@ -1,20 +1,16 @@
 import React from "react";
 import "./PokeSquare.css";
-import { withPokeApi } from "./withPokeApi";
+import usePokeApi from "./usePokeApi";
 
-class PokeSquare extends React.Component {
+const PokeSquare = (props) => {
 
-    componentDidMount() {
-        this.props.getPokemon();  
-    } 
+    const pokemon = usePokeApi();
 
-    render() {
         return (
             <article className="pokeSquare">
-                {this.props.pokemon_name}
+                {pokemon.pokemon_name}
             </article>
         );
-    }
 }
 
-export default withPokeApi(PokeSquare);
+export default PokeSquare;
