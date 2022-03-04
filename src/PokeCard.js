@@ -1,22 +1,25 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./PokeCard.css";
-import {withPokeApi} from "./withPokeApi";
 
-class PokeCard extends React.Component {
+const PokeCard = (props) => {
 
-    componentDidMount(){   
-        console.log(this.props.text);
-        this.props.getPokemon();       
-    }
+    //hook
+    const [pokemon_name, setPokemonName] = useState("Pikachu ofzo - ik weet niet veel van Pokemon");
+    const [myName, setMyName] = useState("Rinse");
 
-    render(){        
-        return (
-            <article>
-                <header>{this.props.pokemon_name}</header>
-                <figure><img src={this.props.pokemon_source} /></figure>
-            </article>
-        )
-    }    
+    //uitgevoerd als component gemount wordt - het statement tussen blokhalen bepaald wanneer de useEffect gedraaid wordt en dat is dus bij verandering van pokemon_name in dit geval
+    useEffect(() => {
+        console.log("ik wordt uigevoerd");
+    }, [pokemon_name]);
+
+    console.log(myName);
+
+    return (
+        <article onClick={() => setMyName("Christina")}>
+            <header>{pokemon_name || "unknown"}</header>
+            <figure><img src={pokemon_name || "unknown"} /></figure>
+        </article>
+    )
 }
 
-export default withPokeApi(PokeCard);
+export default PokeCard;
